@@ -21,6 +21,11 @@
       "types": "./types/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./blueprint": {
+      "types": "./types/libraries/blueprint/index.d.ts",
+      "import": "./dist/blueprint.js",
+      "require": "./dist/blueprint.cjs"
     }
   },
   "scripts": {
@@ -32,7 +37,7 @@
     "@amnis/api": "0",
     "@amnis/eslint-config-react": "^2.3.0",
     "@amnis/mock": "0",
-    "@amnis/state": "workspace:0",
+    "@amnis/state": "0",
     "@amnis/tsconfig-react": "^2.3.0",
     "@blueprintjs/core": "^5.1.5",
     "@reduxjs/toolkit": "https://github.com/amnis-dev/packages/raw/main/redux-toolkit-2.0.0-beta.0-patched.tgz",

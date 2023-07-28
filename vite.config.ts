@@ -7,7 +7,7 @@ export default defineConfig({
     lib: {
       entry: {
         index: resolve(__dirname, 'src/index.ts'),
-        blueprint: resolve(__dirname, 'src/blueprint/index.ts'),
+        blueprint: resolve(__dirname, 'src/libraries/blueprint/index.ts'),
       },
       name: 'AmnisReact',
     },
@@ -19,13 +19,8 @@ export default defineConfig({
         'react',
         'react-dom',
         '@amnis/state',
-        'node:crypto',
-        'crypto',
+        '@amnis/api',
       ],
     },
-  },
-  test: {
-    globals: true,
-    testTimeout: 10000,
   },
 });
